@@ -1,0 +1,13 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a; /* Ton fond bleu nuit */
+    color: #d1d5db;           /* Ton texte principal */
+    font-family: -apple-system, sans-serif; /* Style propre sans charger de police */
+    padding: 60px 40px;
+}
