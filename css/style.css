@@ -6,8 +6,36 @@
 }
 
 body {
-    background-color: #0f172a; /* Ton fond bleu nuit */
-    color: #d1d5db;           /* Ton texte principal */
-    font-family: -apple-system, sans-serif; /* Style propre sans charger de police */
+    background-color: #0f172a;
+    color: #d1d5db;           
+    font-family: -apple-system, sans-serif; 
     padding: 60px 40px;
 }
+
+.hero {
+    max-width: 800px;     
+    margin: 15px auto 80px auto; 
+    text-align: center;   
+    position: relative;
+}
+
+.h-name {
+    color: #e5e7eb;     
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em; 
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.h-para {
+    font-size: 1.15rem;
+    color: #d1d5db;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+
+
