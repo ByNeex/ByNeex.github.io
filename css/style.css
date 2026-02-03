@@ -5,48 +5,67 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 60px;
-}
-
 body {
     background-color: #0f172a;
     color: #d1d5db;           
     font-family: -apple-system, sans-serif; 
-    padding: 30px 40px;
+    padding: 100px 40px;
 }
 
-.hero {
-    max-width: 800px;     
-    margin: 10px auto 80px auto; 
-    text-align: center;   
+.top-ctrl {
+    position: fixed;
+    top: 24px;
+    left: 40px;
+    right: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home-btn {
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #9ca3af;
+    cursor: pointer;
     position: relative;
+    top: -1px;
 }
 
-.h-name {
+.home-btn:hover {
+    color: #38bdf8;
+    transition: 300ms;
+}
+
+#hero {
+    max-width: 800px;     
+    margin: -5px auto 80px auto; 
+    text-align: center;   
+}
+
+#hero h1{
     color: #e5e7eb;     
     font-size: 3.3rem;
     font-weight: 800;
     letter-spacing: -0.04em; 
     margin-bottom: 12px;
     line-height: 1.2;
+
 }
 
-.h-para {
+#hero p{
     font-size: 1rem;
     color: #c4c5c9;
     max-width: 580px;
     margin: 0 auto;
-    text-align: center;
     line-height: 1.5;
 }
 
-.lang-choice {
-    position: absolute;
-    top: 16px;
-    right: -190px;
-    
-    background: rgba(255, 255, 255, 0.03); 
+.btn-container {
+    background: rgba(255, 255, 255, 0.04); 
     border: 1px solid #334155;            
     padding: 6px 16px;
     border-radius: 100px;                
@@ -75,6 +94,7 @@ body {
 .btn-langue.active {
     color: #38bdf8;      
 }
+
 
 
 

@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bastien BABU | Mathématiques & Informatique</title>
+    <title>Bastien BABU | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="hero">
-            <div class="lang-choice">
-                <button id="fr-btn" class="btn-langue active">FR</button>
-                <span class="pipe">|</span>
-                <button id="en-btn" class="btn-langue">EN</button>
-            </div>
-            
+    <!-- Header des boutons flottant -->
+    <header class="top-ctrl">
+        <div class="btn-container">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                Accueil
+            </button>
+        </div>
+
+        <div class="btn-container">
+            <button id="fr-btn" class="btn-langue active">FR</button>
+            <span class="pipe">|</span>
+            <button id="en-btn" class="btn-langue">EN</button>
+        </div>  
+    </header>
+
+    <main> 
+        <!-- Hero section -->
+        <section id="hero">
             <h1 class="h-name">Bastien BABU</h1>
             <p class="h-para"> Étudiant en Double Licence Mathématiques & Informatique à l’Université de Toulouse, 
                 je construis un parcours où la rigueur mathématique et la puissance des outils informatiques 
                 se combinent pour développer des projets d’intelligence artificielle utiles et responsables.
             </p>
-        </div>
-        
-
-    </header>
-
-    <main> 
-        <section id="hero">
         </section>
 
         
