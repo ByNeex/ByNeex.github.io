@@ -9,7 +9,7 @@ body {
     background-color: #0f172a;
     color: #d1d5db;           
     font-family: -apple-system, sans-serif; 
-    padding: 68px 40px;
+    padding: 68px 40px 20px;
 }
 
 .top-ctrl {
@@ -243,6 +243,57 @@ body {
     .nav-grid{
         grid-template-columns: 1fr;
         min-height: auto;
+    }
+}
+
+
+/* --- FOOTER --- */
+.site-footer {
+    max-width: 980px;
+    margin: 79px auto 0px auto; /* Centre le footer par rapport à la grille */
+    padding-top: 12px;
+    border-top: 1px solid #334155; /* Petite ligne subtile de séparation */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.site-footer p {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #9ca3af;
+    transition: color 200ms ease, transform 200ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Effet de survol identique à tes boutons d'accueil */
+.social-links a:hover {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* Responsive pour les téléphones : on centre tout */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
 
