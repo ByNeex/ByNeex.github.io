@@ -9,7 +9,7 @@ body {
     background-color: #0f172a;
     color: #d1d5db;           
     font-family: -apple-system, sans-serif; 
-    padding: 100px 40px;
+    padding: 68px 40px;
 }
 
 .top-ctrl {
@@ -37,18 +37,18 @@ body {
 
 .home-btn:hover {
     color: #38bdf8;
-    transition: 300ms;
+    transition: 200ms;
 }
 
 #hero {
     max-width: 800px;     
-    margin: -5px auto 80px auto; 
-    text-align: center;   
+    margin: -10px auto 80px auto; 
+    text-align: center;  
 }
 
 #hero h1{
     color: #e5e7eb;     
-    font-size: 3.3rem;
+    font-size: 3.2rem;
     font-weight: 800;
     letter-spacing: -0.04em; 
     margin-bottom: 12px;
@@ -57,7 +57,7 @@ body {
 }
 
 #hero p{
-    font-size: 1rem;
+    font-size: 0.92rem;
     color: #c4c5c9;
     max-width: 580px;
     margin: 0 auto;
@@ -98,5 +98,152 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- NAV GRID (4 grosses tuiles 2x2) --- */
+.nav-grid{
+    max-width: 980px;
+    margin: 26px auto 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    /* Prend “tout le reste” visuellement */
+    min-height: 52vh;
+}
+
+.nav-card{
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.04);
+    border: 1px solid #334155;
+    border-radius: 22px;
+
+    padding: 18px 18px 16px 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+/* Top line (titre + chip) */
+.nav-card-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.nav-card h2{
+    color: #e5e7eb;
+    font-size: 1.15rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.nav-chip{
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #9ca3af;
+    border: 1px solid #334155;
+    background: rgba(255,255,255,0.03);
+    padding: 6px 10px;
+    border-radius: 100px;
+}
+
+/* Preview text */
+.nav-card p{
+    margin-top: 12px;
+    color: #c4c5c9;
+    line-height: 1.5;
+    max-width: 36ch;
+}
+
+/* Tags */
+.nav-tags{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 14px;
+}
+
+.nav-tags span{
+    font-size: 0.75rem;
+    font-weight: 800;
+    color: #9ca3af;
+
+    border: 1px solid #334155;
+    background: rgba(255,255,255,0.03);
+    padding: 6px 10px;
+    border-radius: 100px;
+}
+
+/* Arrow indicator */
+.nav-arrow{
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    color: #9ca3af;
+    font-weight: 900;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    transform: translateY(0);
+    transition: transform 220ms ease, color 220ms ease;
+}
+
+/* Premium hover */
+.nav-card:hover{
+    transform: translateY(-2px);
+    border-color: rgba(56,189,248,0.75);
+    background: rgba(255,255,255,0.055);
+}
+
+.nav-card:hover .nav-arrow{
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+/* Accessibilité (clavier) */
+.nav-card:focus{
+    outline: none;
+}
+
+.nav-card:focus-visible{
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56,189,248,0.18);
+}
+
+/* Responsive */
+@media (max-width: 760px){
+    .nav-grid{
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+}
 
 

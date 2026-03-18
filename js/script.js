@@ -12,9 +12,10 @@ const frBtn = document.getElementById('fr-btn');
 const enBtn = document.getElementById('en-btn');
 const textPara = document.querySelector('.h-para');
 
+
+
 // Fonction de changement en Français
 frBtn.addEventListener('click', () => {
-
     frBtn.classList.add('active');
     enBtn.classList.remove('active');
     
@@ -28,3 +29,5 @@ enBtn.addEventListener('click', () => {
     
     textPara.innerHTML = translations.en;
 });
+
+
