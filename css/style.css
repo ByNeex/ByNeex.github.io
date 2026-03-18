@@ -1,4 +1,7 @@
 
+
+/* -- Page principale -- */
+
 * {
     margin:0;
     padding:0;
@@ -97,30 +100,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- NAV GRID (4 grosses tuiles 2x2) --- */
+/* --- Grille de Navigation (4) --- */
 .nav-grid{
     max-width: 980px;
     margin: 26px auto 0 auto;
@@ -129,7 +109,6 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 
-    /* Prend “tout le reste” visuellement */
     min-height: 52vh;
 }
 
@@ -151,7 +130,7 @@ body {
     transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
 }
 
-/* Top line (titre + chip) */
+
 .nav-card-top{
     display: flex;
     align-items: center;
@@ -176,7 +155,6 @@ body {
     border-radius: 100px;
 }
 
-/* Preview text */
 .nav-card p{
     margin-top: 12px;
     color: #c4c5c9;
@@ -184,7 +162,6 @@ body {
     max-width: 36ch;
 }
 
-/* Tags */
 .nav-tags{
     display: flex;
     gap: 8px;
@@ -203,7 +180,6 @@ body {
     border-radius: 100px;
 }
 
-/* Arrow indicator */
 .nav-arrow{
     position: absolute;
     right: 14px;
@@ -216,7 +192,6 @@ body {
     transition: transform 220ms ease, color 220ms ease;
 }
 
-/* Premium hover */
 .nav-card:hover{
     transform: translateY(-2px);
     border-color: rgba(56,189,248,0.75);
@@ -228,7 +203,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Accessibilité (clavier) */
 .nav-card:focus{
     outline: none;
 }
@@ -238,7 +212,6 @@ body {
     box-shadow: 0 0 0 3px rgba(56,189,248,0.18);
 }
 
-/* Responsive */
 @media (max-width: 760px){
     .nav-grid{
         grid-template-columns: 1fr;
@@ -250,9 +223,9 @@ body {
 /* --- FOOTER --- */
 .site-footer {
     max-width: 980px;
-    margin: 79px auto 0px auto; /* Centre le footer par rapport à la grille */
+    margin: 79px auto 0px auto; 
     padding-top: 12px;
-    border-top: 1px solid #334155; /* Petite ligne subtile de séparation */
+    border-top: 1px solid #334155; 
 }
 
 .footer-content {
@@ -282,13 +255,12 @@ body {
     justify-content: center;
 }
 
-/* Effet de survol identique à tes boutons d'accueil */
+/* Effet de survol identique*/
 .social-links a:hover {
     color: #38bdf8;
     transform: translateY(-2px);
 }
 
-/* Responsive pour les téléphones : on centre tout */
 @media (max-width: 600px) {
     .footer-content {
         flex-direction: column;
@@ -298,3 +270,145 @@ body {
 }
 
 
+
+
+/* --- PAGE PROJETS --- */
+.projects-container {
+    max-width: 980px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Inversion de l'ordre entre chaque projet */
+.project-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-text h2 {
+    color: #e5e7eb;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.project-text p {
+    color: #c4c5c9;
+    line-height: 1.6;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+/* --- Boutons des projets --- */
+.project-actions {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-primary {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: rgba(56, 189, 248, 0.2);
+    border-color: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.btn-primary.disabled {
+    background-color: rgba(255, 255, 255, 0.02);
+    color: #64748b;
+    border-color: #334155;
+    cursor: not-allowed;
+}
+
+/* --- Image à droite --- */
+.project-visual {
+    flex: 1;
+    height: 280px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    background-color: rgba(255,255,255,0.02);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Blocage du stage en cours*/
+.wip-overlay {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(15, 23, 42, 0.9),
+        rgba(15, 23, 42, 0.9) 10px,
+        rgba(30, 41, 59, 0.9) 10px,
+        rgba(30, 41, 59, 0.9) 20px
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wip-overlay span {
+    background: #0f172a;
+    padding: 8px 16px;
+    border-radius: 100px;
+    border: 1px solid #334155;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .project-row, .project-row:nth-child(even) {
+        flex-direction: column;
+    }
+    .project-visual {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+/* --- Ajustement hauteur entre titre projets et Image d'aperçu --- */
+
+.project-row {
+    display: flex;
+    align-items: flex-start; 
+    gap: 40px;
+}
+
+.project-text h2 {
+    color: #e5e7eb;
+    font-size: 1.8rem;
+    margin-top: 0; 
+    margin-bottom: 12px;
+}
+
+.project-visual {
+    flex: 1;
+    height: 300px; 
+    border-radius: 16px;
+    border: 1px solid #334155;
+    background-color: rgba(255,255,255,0.02);
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px; 
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastien BABU | Projets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="top-ctrl">
+        <div class="btn-container">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                Accueil
+            </button>
+        </div>
+
+        <div class="btn-container">
+            <span class="btn-langue active">FR</span>
+            <span class="pipe">|</span>
+            <a href="en/projects.html" class="btn-langue" style="text-decoration: none;">EN</a>
+        </div>  
+    </header>
+
+    <main> 
+        <section id="hero">
+            <h1 class="h-name">Mes Projets</h1>
+            <p class="h-para">Une sélection de mes travaux récents en Intelligence Artificielle, Mathématiques appliquées et Développement.</p>
+        </section>
+
+        <section class="projects-container">
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Stage de fin d'études</h2>
+                    <div class="nav-tags">
+                        <span>Recherche</span><span>En cours</span>
+                    </div>
+                    <p>Actuellement en stage, je travaille sur des problématiques complexes mêlant [...].</p>
+                    
+                    <div class="project-actions">
+                        <button class="btn-primary disabled" disabled>Dossier classifié =D</button>
+                    </div>
+                </div>
+
+                <div class="project-visual">
+                    <div class="wip-overlay">
+                        <span>Entraînement en cours...</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Analyse Biomécanique au Tennis</h2>
+                    <div class="nav-tags">
+                        <span>Computer Vision</span><span>Deep Learning</span><span>Python</span>
+                    </div>
+                    <p>
+                        L'estimation de pose humaine (Human Pose Estimation) est une technologie d'IA permettant d'extraire les mouvements du corps à partir d'une simple vidéo. Dans ce projet, le but est d'analyser le coup droit d'un tennisman en extrayant des données biomécaniques précises. J'ai privilégié l'architecture HRNet pour sa précision spatiale, avant d'implémenter un réseau de neurones LSTM pour prédire l'évolution du mouvement.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="https://github.com/ByNeex/Tennis-Pose-Analysis/" target="_blank" class="btn-primary" style="text-decoration: none;">Voir le code (GitHub)</a>
+                        <a href="docs/Rapport_Estimation_Pose.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Lire le rapport PDF</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="wip-overlay" style="background: rgba(255,255,255,0.05);">
+                        <span style="border:none; background:none;">[Image : Courbes LSTM ou Squelette HRNet]</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Hackathon Enedis : Imputation de données</h2>
+                    <div class="nav-tags">
+                        <span>Data Science</span><span>Séries Temporelles</span><span>Hackathon</span>
+                    </div>
+                    <p>
+                        Développement d'une solution algorithmique sous contrainte de temps lors d'un Hackathon. L'objectif était de nettoyer et d'imputer des valeurs manquantes sur des séries temporelles complexes (courbes de charge Enedis) en utilisant des méthodes statistiques et de Machine Learning.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="#" class="btn-primary" style="text-decoration: none;">Dépôt GitHub (Bientôt dispo)</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="wip-overlay" style="background: rgba(255,255,255,0.05);">
+                        <span style="border:none; background:none;">[Image : Graphique de données imputées]</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Exploration des fonctions Gamma et Bêta</h2>
+                    <div class="nav-tags">
+                        <span>Analyse Complexe</span><span>Probabilités</span><span>Géométrie</span>
+                    </div>
+                    <p>
+                        Étude théorique poussée des fonctions Gamma et Bêta. Le rapport aborde leurs fondements analytiques (Théorème de Bohr-Mollerup, Formule de Gauss), leurs liens étroits, ainsi que leurs applications concrètes : calcul des volumes de boules euclidiennes et pseudo-boules, et leur rôle central dans les lois de probabilités.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="docs/Gamma_Beta.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Rapport Mathématique</a>
+                        <a href="docs/presentation_g&b.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Slides de présentation</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="wip-overlay" style="background: rgba(255,255,255,0.05);">
+                        <span style="border:none; background:none;">[Image : Graphe 3D de Gamma ou Pseudo-boule]</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Portfolio "No-Framework"</h2>
+                    <div class="nav-tags">
+                        <span>HTML/CSS</span><span>JavaScript</span><span>UI/UX</span>
+                    </div>
+                    <p>
+                        Conception et développement de ce site web personnel. L'objectif était de créer une interface moderne, performante et bilingue, en utilisant uniquement les technologies web standards sans s'appuyer sur des bibliothèques externes lourdes.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="https://github.com/ByNeex/ByNeex.github.io" target="_blank" class="btn-primary" style="text-decoration: none;">Voir le code source</a>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="wip-overlay" style="background: rgba(255,255,255,0.05);">
+                        <span style="border:none; background:none;">[Image : Mockup du site]</span>
+                    </div>
+                </div>
+            </article>
+
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 Bastien BABU. Construit sans framework.</p>
+            <div class="social-links">
+                <a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/bastien-babu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Bastien">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
