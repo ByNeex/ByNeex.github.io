@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastien BABU | Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="top-ctrl">
+        <div class="btn-container">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                Home
+            </button>
+        </div>
+
+        <div class="btn-container">
+            <a href="../projects.html" class="btn-langue" style="text-decoration: none;">FR</a>
+            <span class="pipe">|</span>
+            <span class="btn-langue active">EN</span>
+        </div>  
+    </header>
+
+    <main> 
+        <section id="hero">
+            <h1 class="h-name">My Projects</h1>
+            <p class="h-para">Here you will find a selection of my most comprehensive and relevant projects, the ones that best reflect my journey and that I am most proud of.</p>
+        </section>
+
+        <section class="projects-container">
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2 class="long-title-stage">Research Internship at IRIT <br> AI & Medical Imaging</h2>
+                    <div class="nav-tags">
+                        <span>Diffusion Models</span><span>Ultrasound</span><span>Research Internship</span>
+                    </div>
+                    <p>I am currently completing a research internship at the Institut de Recherche en Informatique de Toulouse (IRIT). 
+                        My work focuses on using AI to generate synthetic ultrasound images through Denoising Diffusion Probabilistic Models (DDPM). 
+                        The goal is to address the lack of available data in hospitals to better train future diagnostic software. 
+                        Putting computer science at the service of doctors to assist them daily is what truly drives me in this project !
+                        My experiments and final report are currently in progress... stay tuned for more!
+                    </p>
+                    
+                    <div class="project-actions">
+                        <button class="btn-primary disabled" disabled>Classified Files 🔒</button>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="wip-overlay">
+                        <span>Training in progress...</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2 class="long-title">Human Pose Estimation and Analysis Tennis Application</h2>
+                    <div class="nav-tags">
+                        <span>Computer Vision</span><span>Deep Learning</span><span>Biomechanics</span>
+                    </div>
+                    <p>
+                        This was a group project carried out as part of my Double Degree in Math & CS. 
+                        The core objective was to analyze and predict human movements using computer vision. 
+                        My team and I decided to apply this to sports, specifically tennis. 
+                        We analyzed the movements of a player's different body parts to then attempt to predict 
+                        subsequent movements using an LSTM model.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="https://github.com/ByNeex/Tennis-Pose-Analysis/" target="_blank" class="btn-primary" style="text-decoration: none;">View Code (GitHub)</a>
+                        <a href="../docs/Rapport_Estimation_Pose.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Read PDF Report</a>
+                    </div>
+                </div>
+                <a href="https://github.com/ByNeex/Tennis-Pose-Analysis/" target="_blank" class="project-visual-link">
+                    <div class="project-visual">
+                        <img src="../img/Djokovic_exosquelette.jpg" alt="MMPose analysis on Djokovic">
+                    </div>
+                </a>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Enedis Hackathon : Data Imputation</h2>
+                    <div class="nav-tags">
+                        <span>Machine Learning</span><span>Time Series</span><span>Missing Data</span>
+                    </div>
+                    <p>
+                        Our team participated in this Enedis Hackathon as part of a project for our Artificial Intelligence course.
+                        Our mission was to reconstruct missing data across thousands of electricity consumption curves.
+                        For this challenge, Enedis provided ultra-realistic consumption profiles (generated by their DeepCourbogen tool) but with intentional "gaps" in the data.
+                        The challenge lay in analyzing these time series and developing the best approach to predict and fill these gaps as accurately as possible.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="#" class="btn-primary" style="text-decoration: none;">GitHub Repo (Coming soon)</a>
+                        <a href="../docs/Hackathon_slides.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Presentation Slides</a>
+                    </div>
+                </div>
+                <a href="https://github.com/ByNeex/ByNeex.github.io" target="_blank" class="project-visual-link">
+                    <div class="project-visual">
+                        <img src="../img/hackathon_enedis.png" alt="Website mockup representation">
+                    </div>
+                </a>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2 class="long-title">Gamma and Beta Functions : Theory and Applications</h2>
+                    <div class="nav-tags">
+                        <span>Special Functions</span><span>Research</span><span>Scientific Report</span>
+                    </div>
+                    <p>
+                        This project is where my mathematician side truly shines! 
+                        The goal was to explore the Gamma and Beta functions in depth. 
+                        Rather than stopping at pure theory, we pushed our exploration to practical applications 
+                        (probability, n-dimensional sphere volume calculations, 3D modeling). 
+                        All this research was synthesized into a formal scientific report, written entirely in LaTeX.
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="../docs/Gamma_Beta.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Mathematical Report</a>
+                        <a href="../docs/presentation_g&b.pdf" target="_blank" class="btn-primary" style="text-decoration: none;">Presentation Slides</a>
+                    </div>
+                </div>
+                <a href="../docs/Gamma_Beta.pdf" target="_blank" class="project-visual-link">
+                    <div class="project-visual">
+                        <img src="../img/gamma3D.png" alt="3D representation of the Gamma function">
+                    </div>
+                </a>
+            </article>
+
+            <article class="project-row">
+                <div class="project-text">
+                    <h2>Personal Website - Portfolio</h2>
+                    <div class="nav-tags">
+                        <span>Web Development</span><span>Web Design</span><span>Personal Challenge</span>
+                    </div>
+                    <p>
+                       I designed this portfolio because it had been a while since I last touched Web development, and I wanted to dive back in because I truly enjoy the field. 
+                       Beyond the code, I think it's great to be able to present my entire journey, whether it's my internships or my academic path, on a platform that reflects who I am. 
+                       It's also a way to show recruiters that I can step out of my comfort zone and build things beyond just Python scripts. 
+                       This is a project I am very proud of!
+                    </p>
+                    
+                    <div class="project-actions">
+                        <a href="https://github.com/ByNeex/ByNeex.github.io" target="_blank" class="btn-primary" style="text-decoration: none;">View Source Code</a>
+                    </div>
+                </div>
+                <a href="https://github.com/ByNeex/ByNeex.github.io" target="_blank" class="project-visual-link">
+                    <div class="project-visual">
+                        <img src="../img/mockup_site.png" alt="Website mockup representation">
+                    </div>
+                </a>
+            </article>
+
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 Bastien BABU. Built without frameworks.</p>
+            <div class="social-links">
+                <a href="https://github.com/ByNeex" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/bastien-babu" target="_blank" rel="noopener noreferrer" aria-label="Bastien's LinkedIn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
