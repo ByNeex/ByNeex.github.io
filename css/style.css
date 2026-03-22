@@ -270,8 +270,6 @@ body {
 }
 
 
-
-
 /* --- PAGE PROJETS --- */
 .projects-container {
     max-width: 980px;
@@ -296,9 +294,22 @@ body {
     flex: 1;
 }
 
+.project-text h2.long-title {
+    font-size: 1.60rem;
+    letter-spacing: -0.02em;
+
+}
+
+/* -- Stage -- */
+.project-text h2.long-title-stage {
+    font-size: 1.8rem;
+
+}
+
 .project-text h2 {
     color: #e5e7eb;
     font-size: 1.8rem;
+    margin-top: 0; 
     margin-bottom: 12px;
 }
 
@@ -395,12 +406,6 @@ body {
     gap: 40px;
 }
 
-.project-text h2 {
-    color: #e5e7eb;
-    font-size: 1.8rem;
-    margin-top: 0; 
-    margin-bottom: 12px;
-}
 
 .project-visual {
     flex: 1;
