@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bastien BABU | Contact</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/contact.css"> 
+</head>
+<body>
+
+    <header class="top-ctrl">
+        <div class="btn-container">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                Accueil
+            </button>
+        </div>
+        <div class="btn-container">
+            <span class="btn-langue active">FR</span>
+            <span class="pipe">|</span>
+            <a href="en/contact.html" class="btn-langue" style="text-decoration: none;">EN</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="hero">
+            <h1 class="h-name-contact">Contact</h1>
+            <p class="contact-paragraph">
+                Une question, une idée ou juste envie d’échanger ? <br>
+                N’hésitez pas à m'envoyer un mail ou à utiliser les liens ci-dessous.
+            </p>
+        </section>
+
+        <section class="contact-hybrid">
+            <div class="contact-grid"> 
+                
+                <a id="email-link" class="contact-card"> 
+                    <div class="card-icon">
+                        <img src="img/official-mail.svg" alt="Email icon">
+                    </div>
+                    <h4>Email</h4>
+                    <p id="email-text">Chargement...</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/bastien-babu" target="_blank" rel="noopener noreferrer" class="contact-card linkedin-card"> 
+                    <div class="card-icon">
+                        <img src="img/official-linkedin.png" alt="LinkedIn logo">
+                    </div>
+                    <h4>LinkedIn</h4>
+                    <p>Bastien BABU</p>
+                </a>
+
+                <a href="https://github.com/ByNeex" target="_blank" rel="noopener noreferrer" class="contact-card"> 
+                    <div class="card-icon">
+                        <img src="img/official-github.svg" alt="GitHub logo">
+                    </div>
+                    <h4>GitHub</h4>
+                    <p>@ByNeex</p>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>© 2026 Bastien BABU. Construit sans framework.</p>
+            <div class="social-links">
+                <a href="https://github.com/ByNeex" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/bastien-babu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Bastien">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour éviter le scrapping de mail par des bots avec mailto:
+        document.addEventListener("DOMContentLoaded", function() {
+            // Reconstitution du mail (incompréhensible pour un robot de scraping simple)
+            const p1 = "bastien.babu24"; 
+            const p2 = "gmail.com"; 
+            const fullEmail = p1 + "@" + p2;
+            
+            // On affiche le texte pour l'utilisateur humain
+            const emailTextElement = document.getElementById("email-text");
+            if (emailTextElement) {
+                emailTextElement.textContent = fullEmail;
+            }
+
+            // On rend la carte cliquable pour ouvrir le client mail
+            const emailLink = document.getElementById("email-link");
+            if (emailLink) {
+                emailLink.addEventListener("click", function(e) {
+                    e.preventDefault(); 
+                    window.location.href = "mailto:" + fullEmail;
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+

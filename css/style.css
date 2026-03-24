@@ -444,8 +444,7 @@ body {
 }
 
 
-/* --- PAGE ABOUT : BENTO BOX --- */
-/* --- PAGE ABOUT : DESIGN HYBRIDE (AIR LIBRE + CARTES) --- */
+/* --- PAGE ABOUT --- */
 
 .about-page-hybrid {
     max-width: 1100px;
@@ -453,7 +452,6 @@ body {
     padding: 0 20px;
 }
 
-/* --- SECTION 1 : HERO (À L'AIR LIBRE) --- */
 .about-hero-open {
     display: flex;
     align-items: center;
@@ -462,12 +460,8 @@ body {
     margin-bottom: 80px;
 }
 
-.hero-text-content {
-    flex: 1.2;
-}
-
 .huge-name {
-    font-size: 3.2rem; /* Un très gros titre pour asseoir le design */
+    font-size: 3.2rem;
     margin: 0 0 10px 0;
     line-height: 1.1;
     color: var(--text-color, #e5e7eb);
@@ -493,7 +487,6 @@ body {
     gap: 20px;
 }
 
-/* L'image qui flotte */
 .hero-visual-content {
     flex: 0.8;
     position: relative;
@@ -523,7 +516,6 @@ body {
     z-index: 1;
 }
 
-/* --- SECTION 3 : PASSIONS (CARTES GLASSMORPHISM) --- */
 .passions-hybrid {
     margin-top: 80px;
 }
@@ -542,16 +534,15 @@ body {
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.02); /* Fond presque invisible */
-    border: 1px solid rgba(255, 255, 255, 0.05); /* Bordure extrêmement fine */
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05); 
     padding: 40px 30px;
     border-radius: 16px;
     transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
-    /* --- NOUVEAU : Centrage du contenu --- */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre l'icône */
-    text-align: center;  /* Centre le texte et le titre */
+    align-items: center;
+    text-align: center; 
 }
 
 .glass-card:hover {
@@ -577,7 +568,6 @@ body {
     font-size: 0.95rem;
 }
 
-/* Responsive */
 @media (max-width: 900px) {
     .about-hero-open {
         flex-direction: column-reverse;
@@ -589,12 +579,122 @@ body {
     }
     .mindset-quote-open p {
         border-left: none;
-        border-top: 4px solid var(--accent-color, #3498db);
+        border-top: 4px solid var(--accent-color, #38bdf8);
         padding-left: 0;
         padding-top: 20px;
         text-align: center;
     }
     .hybrid-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ---- PAGE CONTACT ---- */ 
+
+#hero .h-name-contact{
+    color: #e5e7eb;     
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: -0.04em; 
+    margin-bottom: 12px;
+    line-height: 1.2;
+
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px; 
+    width: 100%;
+    max-width: 800px;
+    margin: -5px auto 40px auto; 
+    justify-content: center;
+}
+
+#hero .contact-paragraph {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #c4c5c9;
+    letter-spacing: -0.02em;
+    max-width: 600px;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05); 
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:hover {
+    transform: translateY(-3px); 
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(103, 191, 255, 0.5);
+}
+
+/* Zone de l'icône de base (pour GitHub et Mail) */
+.contact-card .card-icon {
+    margin-bottom: 20px;
+    width: 60px; 
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* On cible spécifiquement la carte qui contient le logo LinkedIn */
+.contact-card.linkedin-card .card-icon {
+    width: 67;  /* On réduit le conteneur visuel de LinkedIn */
+    height: 67px;
+    margin-bottom: 23px;
+    /* On ajoute un peu de padding pour compenser */
+    padding: 5px;
+}
+
+.contact-card .card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-card h4 {
+    margin: 0;
+    font-size: 1.3em;
+    color: var(--accent-color, #3498db);
+}
+
+.contact-card p {
+    margin: 10px 0 0 0;
+    font-size: 0.95em;
+    opacity: 0.9;
+    word-break: break-all;
+}
+
+/* Pour les mobiles */
+@media (max-width: 768px) {
+    #hero .h-name-contact {
+        font-size: 2.2rem; 
+    }
+
+    #hero .contact-paragraph {
+        font-size: 1rem;
+        padding: 0 15px; 
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        padding: 0 20px; 
+        gap: 20px;
+        margin-bottom: 20px;
     }
 }
