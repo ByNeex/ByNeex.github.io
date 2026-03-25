@@ -702,10 +702,9 @@ body {
 /*---- PAGE PARCOURS & COMPÉTENCES ----*/
 
 
-.timeline-container .section-floating-title {
+.timeline-container h3{
     text-align: left;
     margin-bottom: 30px;
-    margin-top: -15px;
 }
 
 .timeline-highlights {
@@ -842,3 +841,33 @@ body {
     color: #a0a0a0;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Bouton en haut */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Le conteneur qui centre les boutons (Liquid Glass) */
+.page-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: -30px auto 40px auto; 
+    padding: 10px 20px;
+    width: fit-content; 
+
+
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+    border-radius: 50px;  
+
+    position: sticky;
+    top: 20px; 
+    z-index: 100;
+}
+
+#section-parcours, 
+#section-competences {
+    scroll-margin-top: 90px; /* Ajuste cette valeur si besoin (100px, 140px...) */
+}
+
