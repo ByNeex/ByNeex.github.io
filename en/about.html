@@ -99,5 +99,17 @@
         </div>
     </footer>
 
+    <script>
+        (function () {
+            var workerUrl = "https://portfolio-tracker.bastien-dev.workers.dev/track";
+            var params = new URLSearchParams({
+            page: location.pathname,
+            ref: document.referrer || "direct",
+            });
+            new Image().src = workerUrl + "?" + params.toString();
+        })();
+    </script>
+
+
 </body>
 </html>
